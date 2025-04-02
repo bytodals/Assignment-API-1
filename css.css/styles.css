@@ -1,0 +1,339 @@
+body {
+    font-family: "Segoe UI","Helvetica Neue", Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url(/images/pink.jpg);
+    color: #20181bde;
+    text-align: center;
+
+}
+.navbar {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: 10px 10px;
+    background-color: #ffffff57;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    top: 0;
+    left: 0;
+    margin-bottom: 10vh;
+    clip-path: polygon(0% 100%, 10% 90%, 25% 95%, 50% 85%, 75% 95%, 90% 90%, 100% 100%, 100% 0%, 0% 0%);
+    border-bottom-left-radius: 50% 20px;
+    border-bottom-right-radius: 50% 20px;
+}
+
+.logo {
+    font-size: 48px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #693343af;
+    text-shadow: #050505d5 0px 0.01px 0.99px;
+    padding: 20px;
+}
+
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 20px 30px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: rgba(37, 23, 28, 0.897);
+    font-size: 28px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+    justify-content: space-between;
+    padding: 20px
+}
+
+.nav-links a:hover {
+    color: #3f202e;
+}
+
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger span {
+    width: 35px;
+    height: 10px;
+    background-color: #3f202e;
+    margin: 5px;
+    transition: 0.3s;
+    border-radius: 5px 10px 1px 20px;
+}
+
+.cloudsection {
+    grid-area:auto;
+    width: 100%;
+    display: grid;
+    justify-content: center;
+    margin-top: 5%;
+}
+
+#scrollImage {
+    width: 100%;
+    opacity: 0.7; 
+    transition: opacity 0.1s ease-in-out;
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+    margin-top: 30px;
+    height: auto;
+    display:flex;
+    margin-bottom: -20px;
+    image-rendering: optimizeSpeed;
+    filter: blur(2px);
+}
+
+
+
+.ccontainer {
+    width:80%;
+    background-color: rgba(255, 255, 255, 0.397);
+    margin: 10px auto;
+    padding-left:30px;
+    padding-right: 30px;;
+    border-radius: 30px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.178);
+    position: relative;
+    justify-content: center;
+}
+
+
+h1 {
+    font-family: 'Segoe UI';
+    font-weight: 600;
+    font-size: 48px;
+    margin-bottom: 20px;
+    color: #3f202e;
+}
+
+h2{
+    font-family: 'Segoe UI';
+    font-weight: 600;
+    font-size: 32px;
+    color: #3f202e;
+    font-weight: bold;
+}
+.user-card {
+    background-image: url(/images/pink.jpg);
+    border-radius: 12px;
+    padding: 15px;
+    margin: 15px 0;
+    font-size: 18px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: transform 0.2s ease-in-out;
+}
+
+.user-card:hover {
+    transform: scale(1.02);
+}
+
+button {
+    background-color: rgb(255, 241, 248);
+    color: #3f202e;
+    border: none;
+    padding: 8px 15px;
+    font-family: 'Segoe UI';
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 8px;
+    text-shadow:  0 4px 12px rgba(0, 0, 0, 0.08);;
+    transition: background 0.2s ease-in-out;
+}
+
+button:hover {
+    background-color: #111010c0;
+}
+
+.details {
+    display: none;
+    margin-top: 10px;
+    font-size: 18px;
+    color: #111010ec;
+}
+
+
+footer {
+    background-color: #ffffff8a;
+    color: #3f202e;
+    padding-top: 8vh;
+    padding-bottom: 3%;
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns:auto;
+    gap: 2px;
+    min-width:auto;
+    min-height:min-content;
+}
+
+footer a {
+    text-decoration: none;
+    cursor: pointer;
+    color: #3f202e;
+}
+
+.toptext {
+    margin-top: -7px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.contact-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    padding: 40px 20px;
+    margin-top: 15vh;
+}
+
+
+.contact-info, .contact-form {
+    background: #ffffff9f;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    width: 500px;
+    max-width: 90%;
+}
+
+
+.contact-info ul {
+    list-style: none;
+    padding: 0;
+}
+
+.contact-info li {
+    margin: 10px 0;
+}
+
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form input, .contact-form textarea {
+    margin-top: 5px;
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 18px;
+    width: 95%;
+}
+
+.contact-form button {
+    background-color: #3f202e;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.contact-form button:hover {
+    background-color: #111010c0;
+}
+
+
+@media (max-width: 1200px) {
+
+    .ccontainer {
+    background-color: #ffffffd7;
+    transition: 9ms ease-in ;
+    }
+}
+
+
+@media (max-width: 768px) {
+
+    .logo {
+        font-size: 28px;
+        display: flex;
+    } 
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background: #dddddd;
+        width: 100%;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+        text-align: center;
+    }
+
+    .nav-links li {
+        padding: 15px 0;
+        font-size: 22px;
+    }
+
+    .hamburger {
+        display: flex;
+        padding: 15px;
+    }
+
+    .nav-active {
+        display: flex;
+    }
+
+
+    .hamburger.toggle span:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+    }
+
+    .hamburger.toggle span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.toggle span:nth-child(3) {
+        transform: rotate(-45deg) translate(5px, -5px);
+    }
+
+    .cloudsection {
+        margin-top: 50px;
+    }
+    
+    .ccontainer {
+        width:60%;
+        background-color: rgba(255, 255, 255, 0.87);
+    }
+
+
+    .contact-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-info, .contact-form {
+        width: 100%;
+        max-width: 70%;
+    }
+}
+
+@media (max-width: 460px) {
+    
+    .navbar {
+        height: fit-content;
+        padding: 4px;
+    }
+
+    .cloudsection {
+        margin-top: 60px;
+    }
+}
