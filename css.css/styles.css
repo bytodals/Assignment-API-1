@@ -2,7 +2,7 @@ body {
     font-family: "Segoe UI","Helvetica Neue", Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-image: url(images/pink.jpg);
+    background-image: url('./images/pink.jpg');
     color: #20181bde;
     text-align: center;
 
